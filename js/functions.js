@@ -21,8 +21,8 @@ function sayHello(name) {
  * console.log 'helloMessage' to check your work
  */
 
-/*let helloMessage = sayHello("Isaac");
-console.log(helloMessage);*/
+let helloMessage = sayHello("Isaac");
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -57,8 +57,7 @@ var random = Math.floor((Math.random() * 3) + 1);
 function isTwo(number) {
     return number === 2
 }
-let result = isTwo(random);
-console.log(result);
+console.log(isTwo(random));
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -70,14 +69,14 @@ console.log(result);
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-/*function calculateTip(percent,bill) {
+function calculateTip(percent,bill) {
     let total = (percent / 100) * bill
     return total
 }
 let percent = 20;
 let bill = 20;
 let tip = calculateTip(percent, bill);
-console.log(tip)*/
+console.log(tip)
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
