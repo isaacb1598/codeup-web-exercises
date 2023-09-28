@@ -1,0 +1,135 @@
+/* All your custom styles for this site go here */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.page-wrapper {
+    background-color: #D9D9D9;
+}
+.container.login {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 45px 25px;
+    width: calc(100% - 40px);
+    max-width: 530px;
+    box-shadow: 0px 0px 104px -40px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+
+    position: relative;
+}
+
+.container.login h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+input {
+    min-height: 55px;
+    border: 1px solid #DDDFE1;
+    padding: 0px 10px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input:placeholder {
+    color: #ABAFB3;
+}
+
+label.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label.input-group span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+label.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label.checkbox span {
+    font-size: 13px;
+    color: #ABAFB3;
+}
+
+a.link {
+    font-size: 13px;
+}
+
+button.btn {
+    min-height: 55px;
+    border: none;
+    border-radius: 99px;
+    background-color: #AA04F9;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button.btn.btn-login {
+    align-self: center;
+    flex: 0 1 auto;
+    min-width: 250px;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+.footer-top {
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+}
+.left-dot {
+    position: absolute;
+    left: 100px;
+    top: 400px;
+}
+.right-dot {
+    position: absolute;
+    right: 80px;
+    top: 25px;
+}
+.wave-left {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+}
+.wave-right {
+    position: absolute;
+    right: 15px;
+
+}
+button.x {
+    width: 35px;
+    height: 35px;
+    border: 5px;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    border-radius: 100%;
+    filter: drop-shadow(-3px 3px 2px #666666);
+}
+button.x img {
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    position: relative;
+    right: -7.5px;
+}
+
+.register {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.purple {
+    color: #d504f9d4;
+    text-decoration: none;
+}
