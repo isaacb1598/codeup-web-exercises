@@ -1,0 +1,38 @@
+* {
+    font-family: Kefa, serif;
+}
+
+body {
+    background-image: url("/img/bg_welcome.jpeg");
+    background-color: darkgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+li, ul {
+    list-style: square;
+}
+
+td, tr {
+    padding: 5px;
+    font-size: 20px;
+}
+
+a:link {
+    color: darkred;
+}
+
+a:visited {
+    color: indigo;
+}
+
+a:hover {
+    color: springgreen;
+}
