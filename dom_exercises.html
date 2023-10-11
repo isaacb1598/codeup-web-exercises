@@ -47,7 +47,7 @@
 
   // TODO: Set the text color of subHeader to blue
   // subHeader.style.color = "blue"
-  
+
   function subHeaderChange() {
     const subHeader = document.getElementById('sub-header');
     subHeader.style.color = "blue"
@@ -84,7 +84,7 @@
       if (i % 2 === 0) {
         listItems[i].style.color = 'grey'
       }
-    } 
+    }
   }
 
   // TODO: Uncomment the next line and get all elements with class name sub-paragraph
@@ -99,7 +99,6 @@
   }
 
   // button events
-
   const btn1 = document.getElementById("header-change");
   btn1.addEventListener('click', mainHeader);
 
@@ -111,6 +110,32 @@
 
   const btn4 = document.getElementById("p-change");
   btn4.addEventListener('click', paragraphChange);
+
+
+  // mouse events
+  function headerClick () {
+    document.querySelector('#main-header').style.backgroundColor = "red"
+  }
+  document.querySelector('#main-header').addEventListener("click", headerClick)
+  function paragraphDoubleClick () {
+    document.querySelector('.sub-paragraph').style.fontSize = "18px";
+  }
+  document.querySelector('.sub-paragraph').addEventListener("dblclick", paragraphDoubleClick)
+
+  document.querySelectorAll('li').forEach(item => {
+    item.addEventListener("mouseenter", listRed => {
+      item.style.color = "red"
+    })
+    item.addEventListener("mouseleave", listBlack => {
+      item.style.color = "black"
+    })
+  })
+
+  // const myLis = document.querySelectorAll('li')
+  // for (let i = 0; i < myLis.length; i++) {
+  //   myLis[i].addEventListener("mouseenter", function ())
+  // }
+
 
 </script>
 </body>
