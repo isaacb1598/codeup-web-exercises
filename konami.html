@@ -11,12 +11,30 @@
 
   document.addEventListener("keyup", event => console.log(event.key) );
 
-  let keyString = toString('')
+  let keyPattern = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a','Enter'];
 
-  function konamiCodeCheck() {
+  let current = 0;
 
-  }
-  
+  let audio = new Audio('audio/Introduction.mp3');
+
+  let keyHandler = function (event) {
+    if (keyPattern[current] === event.key) {
+      current++;
+    } else {
+      current = 0;
+    }
+
+    if (current === keyPattern.length) {
+      document.body.style.backgroundImage = "url('img/contra_art.jpg')";
+      audio.play();
+      alert("You have added 30 lives!");
+
+      current = 0;
+    }
+  };
+
+  document.addEventListener("keyup", keyHandler);
+
 </script>
 </body>
 </html>

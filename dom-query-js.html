@@ -100,17 +100,49 @@
 
   // button events
 
-  const btn1 = document.getElementById("header-change");
-  btn1.addEventListener('click', mainHeader);
+  // const btn1 = document.getElementById("header-change");
+  // btn1.addEventListener('click', mainHeader);
+  //
+  // const btn2 = document.getElementById("sub-header-change");
+  // btn2.addEventListener('click', subHeaderChange);
+  //
+  // const btn3 = document.getElementById("list-change");
+  // btn3.addEventListener('click', listChange);
+  //
+  // const btn4 = document.getElementById("p-change");
+  // btn4.addEventListener('click', paragraphChange);
 
-  const btn2 = document.getElementById("sub-header-change");
-  btn2.addEventListener('click', subHeaderChange);
+//   mouse event
 
-  const btn3 = document.getElementById("list-change");
-  btn3.addEventListener('click', listChange);
+  let mouseH1 = document.querySelector('h1');
+  mouseH1.addEventListener("click", changeColor);
 
-  const btn4 = document.getElementById("p-change");
-  btn4.addEventListener('click', paragraphChange);
+  function changeColor() {
+    this.style.backgroundColor = 'red';
+  }
+
+  let paragraphs = document.querySelectorAll('p');
+  paragraphs.forEach(function(paragraph) {
+    paragraph.addEventListener('dblclick', changeFontSize);
+  });
+
+  function changeFontSize() {
+    this.style.fontSize = "18px";
+  }
+
+  let listItems = document.querySelectorAll('li');
+  listItems.forEach(function(listItem) {
+    listItem.addEventListener('mouseover', changeListColor);
+    listItem.addEventListener('mouseout', resetListColor);
+  });
+
+  function changeListColor() {
+    this.style.color = "red";
+  }
+
+  function resetListColor() {
+    this.style.color = "black";
+  }
 
 </script>
 </body>
